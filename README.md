@@ -21,6 +21,8 @@
 - NavBar should update as soon as user logs in
 - Refactor our code to add constants file 
 - Create a components folder and move all the components into it and change the imports accordingly
+- You should not be access other routes without login
+- If token is not present, redirect user to login page
 
 Body 
     NavBar
