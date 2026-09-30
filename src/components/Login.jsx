@@ -23,7 +23,7 @@ const Login = () => {
       return navigate("/");
     }catch(err){
       setError(err?.response?.data || err.message);
-      console.error(err?.response?.data || "Something went wrong!!");
+      // console.error(err?.response?.data || "Something went wrong!!");
     }
   }
 

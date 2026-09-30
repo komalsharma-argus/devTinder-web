@@ -25,6 +25,15 @@
 - If token is not present, redirect user to login page
 - Logout feature with custom error handling for invalid credentials
 - Made appropriate backend changes with status codes to make sure invalid data is not accepted if default 200 status code is sent with invalid data
+- Get the Feed
+- Create Feed Slice and Feed in the store
+- Build User Card on Feed
+
+
+
+TODOs: 
+- Error login in Navbar.jsx, Feed.jsx
+- Design Custom Error Page
 
 Body 
     NavBar
