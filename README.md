@@ -28,12 +28,17 @@
 - Get the Feed
 - Create Feed Slice and Feed in the store
 - Build User Card on Feed
+- Edit profile feature 
+- Show Toast Message on save of Profile
 
 
 
 TODOs: 
 - Error login in Navbar.jsx, Feed.jsx
 - Design Custom Error Page
+- Make about textarein EditProfile component
+- Add skills in profile section
+- Make gender a dropdown in EditProfile component
 
 Body 
     NavBar
