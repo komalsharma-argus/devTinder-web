@@ -23,6 +23,8 @@
 - Create a components folder and move all the components into it and change the imports accordingly
 - You should not be access other routes without login
 - If token is not present, redirect user to login page
+- Logout feature with custom error handling for invalid credentials
+- Made appropriate backend changes with status codes to make sure invalid data is not accepted if default 200 status code is sent with invalid data
 
 Body 
     NavBar
