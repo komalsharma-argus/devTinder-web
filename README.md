@@ -30,11 +30,12 @@
 - Build User Card on Feed
 - Edit profile feature 
 - Show Toast Message on save of Profile
+- See all my connections (View Connections page)
 
 
 
 TODOs: 
-- Error login in Navbar.jsx, Feed.jsx
+- Error handle in Navbar.jsx, Feed.jsx, Connections.jsx
 - Design Custom Error Page
 - Make about textarein EditProfile component
 - Add skills in profile section
