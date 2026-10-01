@@ -32,6 +32,7 @@
 - Show Toast Message on save of Profile
 - View Connections page
 - View Connection Requests page
+- Feature: Accept/Reject Connection Request
 
 
 
