@@ -30,7 +30,8 @@
 - Build User Card on Feed
 - Edit profile feature 
 - Show Toast Message on save of Profile
-- See all my connections (View Connections page)
+- View Connections page
+- View Connection Requests page
 
 
 
