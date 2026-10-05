@@ -10,12 +10,12 @@ const Feed = () => {
   const dispatch = useDispatch();
 
   const getFeed = async() => {
-    if (feed) return;
+    if (feed && feed.length > 0) return;
     try{
       const res = await axios.get(BASE_URL + "/feed", {
         withCredentials: true
       });
-      dispatch(addFeed(res.data));
+      dispatch(addFeed(res?.data?.data));
     }catch(err){
       //Error logic
       //redirect to error page 
@@ -26,10 +26,17 @@ const Feed = () => {
     getFeed();
   }, []);
 
+  if(!feed) {
+    return <h1>Loading...</h1>;
+  };
+
+  if(feed.length <= 0)
+    return <h1 className='flex justify-center my-10'>No New Users Found!!</h1>
+
   return (
     feed && (
       <div className='flex justify-center my-10'>
-        <UserCard user={feed?.data[0]} />
+        <UserCard user={feed[0]} />
       </div>
     )
   )

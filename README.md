@@ -33,6 +33,9 @@
 - View Connections page
 - View Connection Requests page
 - Feature: Accept/Reject Connection Request
+- Send/Ignore the user card from the feed
+- Signup New User
+- E2E Testing 
 
 
 
