@@ -39,13 +39,13 @@
 - Error handling in Navbar.jsx, Feed.jsx, Connections.jsx
 - Design a custom error page
 - Redirect to error page in case using state object and navigate
+- Make about textarea in EditProfile component
+- Make gender a dropdown in EditProfile component
 
 
 
 TODOs: 
-- Make about textarein EditProfile component
 - Add skills in profile section
-- Make gender a dropdown in EditProfile component
 
 Body 
     NavBar

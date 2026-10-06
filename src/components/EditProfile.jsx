@@ -85,15 +85,22 @@ const EditProfile = ({user}) => {
                             />
                             </fieldset>
                             <fieldset className="fieldset py-2 my-2">
-                            <label className="label" htmlFor="lastName">Gender:</label>
-                            <input 
-                                type="text" 
-                                value={gender} 
-                                id="gender" 
-                                className="input" 
-                                placeholder="Gender" 
-                                onChange={(e) => setGender(e.target.value)}
-                            />
+                                <label className="label" htmlFor="gender">
+                                    Gender:
+                                </label>
+                                <select
+                                    id="gender"
+                                    value={gender}
+                                    className="select"
+                                    onChange={(e) => setGender(e.target.value)}
+                                >
+                                    <option value="" disabled>
+                                        Select Gender
+                                    </option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </fieldset>
                             <fieldset className="fieldset py-2 my-2">
                             <label className="label" htmlFor="lastName">PhotoURL: </label>
@@ -108,11 +115,11 @@ const EditProfile = ({user}) => {
                             </fieldset>
                             <fieldset className="fieldset py-2 my-2">
                             <label className="label" htmlFor="lastName">About:</label>
-                            <input 
+                            <textarea 
                                 type="text"
                                 value={about} 
                                 id="about" 
-                                className="input" 
+                                className="textarea" 
                                 placeholder="About" 
                                 onChange={(e) => setAbout(e.target.value)}
                             />
