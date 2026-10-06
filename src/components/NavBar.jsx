@@ -19,8 +19,14 @@ const NavBar = () => {
       dispatch(removeUser());
       navigate("/login");
     }catch(err){
-      //Error logic
-      //redirect to error page 
+      navigate("/error", {
+        state: {
+          statusCode: err.response?.status || 500,
+          message:
+            err.response?.data?.message ||
+            "Something went wrong while logging out. Please try again."
+        }
+      });
     }
   }
 

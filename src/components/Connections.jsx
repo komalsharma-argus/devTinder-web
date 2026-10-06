@@ -3,9 +3,11 @@ import React, { useEffect } from 'react'
 import { BASE_URL } from '../utils/constants'
 import { useDispatch, useSelector } from 'react-redux'
 import { addConnections } from '../utils/connectionSlice'
+import { useNavigate } from 'react-router-dom';
 
 const Connections = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const connections = useSelector((store) => store.connections);
 
     const fetchConnections = async() => {
@@ -15,8 +17,14 @@ const Connections = () => {
             });
             dispatch(addConnections(res.data.data));
         }catch(err){
-            //Error logic
-            //redirect to error page 
+            navigate("/error", {
+                state: {
+                    statusCode: err.response?.status || 500,
+                    message:
+                        err.response?.data?.message ||
+                        "Unable to fetch your connections. Please try again."
+                }
+            });
         }
     };
 
