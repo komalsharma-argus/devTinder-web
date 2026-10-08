@@ -41,7 +41,7 @@
 - Redirect to error page in case using state object and navigate
 - Make about textarea in EditProfile component
 - Make gender a dropdown in EditProfile component
-
+- Add skills in profile section
 
 
 TODOs: 
